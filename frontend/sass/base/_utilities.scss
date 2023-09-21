@@ -17,17 +17,33 @@
 .mg-t{
     margin-top: 1rem;
 }
+
+.mg-t2{
+    margin-top: 2rem;
+}
 .pd{
     padding: 0.5rem 2rem !important;
     font-size: 2rem;
     display: inline-block;
 }
-.abt{
-    background-color: $color-fade;
-}
+
 
 .pad{
     padding: 6rem 0;
+}
+
+.mg-b{
+    margin-bottom: 2rem;
+}
+
+.mg-b4{
+    margin-bottom: 5rem !important;
+}
+.icon{
+    fill:$color-white;
+    width: 2rem;
+    height: 1rem;
+    text-align: center;
 }
 
 
