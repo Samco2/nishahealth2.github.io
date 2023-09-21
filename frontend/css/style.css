@@ -1,0 +1,384 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px    Tablet landscape
+[1200 -1800]    Desktop the present design
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+::selection {
+  background: #fff;
+}
+
+body {
+  font-family: Work Sans Regular;
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 2rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Base */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  font-family: Work Sans;
+  font-weight: bold;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+body:after {
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.log {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #FF007F;
+  font-family: Poppins !important;
+}
+
+.log2 {
+  color: #6B93F6;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.align {
+  justify-content: center;
+  align-items: center;
+}
+
+.mg-t {
+  margin-top: 1rem;
+}
+
+.pd {
+  padding: 0.5rem 2rem !important;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.abt {
+  background-color: #F2F6FF;
+}
+
+.pad {
+  padding: 6rem 0;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+}
+@media (max-width: 56.25em) {
+  .row {
+    display: block;
+  }
+}
+.row:not(:last-child) {
+  margin-bottom: 3rem;
+}
+@media (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+  }
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+@media (max-width: 56.25em) {
+  .row [class^=col-]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .row [class^=col-] {
+    width: 100% !important;
+  }
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+.row .colw {
+  width: calc(100% - 6rem + 6rem);
+}
+.row .col-1-of-32 {
+  width: calc((100% - 4 * 6rem) / 3.5);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc(2 * (100% - 2 * 6rem) / 3 + 6rem);
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc(2 * (100% - 3 * 6rem) / 4 + 6rem);
+}
+.row .col-3-of-4 {
+  width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
+}
+.row .col-1-of-5 {
+  width: calc((100% - 4 * 6rem) / 5);
+}
+.row .col-1-of-6 {
+  width: calc((100% - 5 * 6rem) / 6);
+}
+.row .col-1-of-12 {
+  width: calc((100% - 18rem) / 12);
+}
+.row .col1 {
+  width: 100%;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.row .col-2 {
+  width: cal(114rem/2);
+}
+
+.btn {
+  padding: 0rem 3rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  text-align: center;
+  background-image: linear-gradient(130deg, #FF007F 35%, #6B93F6);
+  font-family: Work Sans;
+  font-weight: 600;
+}
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  background-image: none;
+  background-color: #FF007F;
+}
+
+.hom {
+  height: 100vh;
+  background-image: linear-gradient(to right, #07206c, transparent), url(../../img/home.png);
+  background-size: cover;
+  background-position: top;
+  border: none;
+  outline: none;
+}
+@media (max-width: 75em) {
+  .hom {
+    flex: 1 0 91%;
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
+  .hom {
+    background-image: linear-gradient(to right, #07206c, trasparent), url(../../img/home.png);
+  }
+}
+@media (max-width: 75em) {
+  .hom {
+    height: 80vh;
+  }
+}
+@media (max-width: 27em) {
+  .hom {
+    height: 70vh;
+  }
+}
+.hom__txt {
+  position: absolute;
+  top: 25%;
+  left: 5.8vw;
+  color: #fff;
+}
+.hom__txt h1 {
+  font-size: 7rem;
+}
+.hom__txt p {
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.arrow {
+  margin-left: 2rem;
+  height: 1rem;
+}
+
+/* DROP DOWN MENU START */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  height: 80px;
+}
+.nav_log a {
+  display: flex;
+  font-family: Poppins !important;
+  font-size: 2rem;
+  padding: 0 1rem !important;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.nav_log a span {
+  font-size: 3rem;
+  height: 4rem;
+  font-family: Poppins;
+}
+.nav_log a img {
+  position: relative;
+  top: 0.8rem;
+  padding-right: 0.3rem;
+  width: 5rem;
+}
+.nav_menu {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-basis: 50%;
+}
+.nav_menu li {
+  list-style: none;
+}
+.nav_menu li a {
+  list-style: none;
+  text-decoration: none;
+  color: #324575;
+  cursor: pointer;
+}
+.nav_menu li a:focus, .nav_menu li a:active, .nav_menu li a:hover, .nav_menu li a:focus-visible {
+  outline: none;
+  border-bottom: 1px solid #061A48;
+  color: #EE5719;
+}
+
+/* DROP DOWN MENU END */
+.yrs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+.yrs_5 {
+  align-self: center;
+  text-align: center;
+  color: #324575;
+}
+.yrs_5 h3 {
+  font-size: 4rem;
+}
+.yrs_5 a {
+  color: #5373C2;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.yrs_5 a:hover {
+  color: #EE5719;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+.log{
+    font-weight: 700;
+    font-size: 3rem;
+    color:$color-icon;
+    font-family: Poppins !important;
+}
+.log2{
+    color:$color-sub-icon;
+    font-weight: 800;
+    font-size: 3rem;
+
+}
+.align{
+    justify-content: center;
+    align-items: center;
+}
+.mg-t{
+    margin-top: 1rem;
+}
+.pd{
+    padding: 0.5rem 2rem !important;
+    font-size: 2rem;
+    display: inline-block;
+}
+.abt{
+    background-color: $color-fade;
+}
+
+.pad{
+    padding: 6rem 0;
+}
+
+

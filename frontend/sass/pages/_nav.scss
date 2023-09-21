@@ -1,0 +1,80 @@
+/* DROP DOWN MENU START */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    height:80px;
+
+    &_log{
+        a{
+            display: flex;
+            font-family: Poppins !important;
+            font-size: $default-font-size;
+            padding: 0 1rem !important;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+    
+            span{
+                 font-size:3rem; 
+                 height: 4rem;
+                font-family: Poppins;
+    
+            }
+    
+            img{
+                
+                position: relative;
+                top:0.8rem;
+                padding-right: 0.3rem;
+                width: 5rem;
+            }
+    
+          
+        }
+    }
+
+
+    
+   
+    &_menu{
+        display: flex;
+        // align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        flex-basis: 50%;
+        // padding: 1rem 0;
+       
+        
+        
+    li{
+        list-style: none;
+        
+        a{
+            list-style: none;
+            text-decoration: none;
+            color:$color-menu;
+            cursor: pointer;
+
+
+            &:focus,
+            &:active,
+            &:hover,
+            &:focus-visible {
+                outline:none;
+                border-bottom: 1px solid $color-link-hover;
+                color:$color-link;
+            }
+
+        }
+    }
+        
+    }
+}
+
+
+
+
+/* DROP DOWN MENU END */
