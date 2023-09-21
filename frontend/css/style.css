@@ -148,6 +148,12 @@ body:after {
   display: inline-block;
 }
 
+.pd2 {
+  padding: 0.5rem 1rem !important;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
 .pad {
   padding: 6rem 0;
 }
@@ -165,6 +171,26 @@ body:after {
   width: 2rem;
   height: 1rem;
   text-align: center;
+}
+
+.bgk {
+  background-color: #F2F6FF;
+}
+
+.icon2 {
+  fill: #324575;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 8rem;
+  /* margin: 2rem; */
+  padding: 2rem;
+  height: 8rem;
+  position: relative;
+  top: 4rem;
+}
+
+.mg-t {
+  margin-top: 1rem;
 }
 
 .row {
@@ -199,7 +225,7 @@ body:after {
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
-  margin-right: 6rem;
+  margin-right: 10rem;
 }
 @media (max-width: 56.25em) {
   .row [class^=col-]:not(:last-child) {
@@ -213,34 +239,34 @@ body:after {
   }
 }
 .row .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
+  width: calc((100% - 10rem) / 2);
 }
 .row .colw {
-  width: calc(100% - 6rem + 6rem);
+  width: calc(100% - 10rem + 10rem);
 }
 .row .col-1-of-32 {
-  width: calc((100% - 4 * 6rem) / 3.5);
+  width: calc((100% - 4 * 10rem) / 3.5);
 }
 .row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
+  width: calc((100% - 2 * 10rem) / 3);
 }
 .row .col-2-of-3 {
-  width: calc(2 * (100% - 2 * 6rem) / 3 + 6rem);
+  width: calc(2 * (100% - 2 * 10rem) / 3 + 10rem);
 }
 .row .col-1-of-4 {
-  width: calc((100% - 3 * 6rem) / 4);
+  width: calc((100% - 3 * 10rem) / 4);
 }
 .row .col-2-of-4 {
-  width: calc(2 * (100% - 3 * 6rem) / 4 + 6rem);
+  width: calc(2 * (100% - 3 * 10rem) / 4 + 10rem);
 }
 .row .col-3-of-4 {
-  width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
+  width: calc(3 * (100% - 3 * 10rem) / 4 + 2 * 10rem);
 }
 .row .col-1-of-5 {
-  width: calc((100% - 4 * 6rem) / 5);
+  width: calc((100% - 4 * 10rem) / 5);
 }
 .row .col-1-of-6 {
-  width: calc((100% - 5 * 6rem) / 6);
+  width: calc((100% - 5 * 10rem) / 6);
 }
 .row .col-1-of-12 {
   width: calc((100% - 18rem) / 12);
@@ -397,6 +423,39 @@ body:after {
 }
 
 /* DROP DOWN MENU END */
+.get {
+  background-color: #6B93F6;
+  margin: 0 2rem;
+  border-radius: 2rem;
+  color: #fff;
+  padding: 3rem;
+}
+.get-hd {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+.get-hd h3,
+.get-hd h4 {
+  margin-bottom: 1rem;
+}
+.get-con {
+  background-color: #fff;
+  border-radius: 2rem;
+  color: #324575;
+  padding: 2rem 3rem;
+}
+.get-con p {
+  font-size: 1.6rem;
+}
+
+.d-fl {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+}
+
 .yrs {
   display: flex;
   justify-content: space-around;

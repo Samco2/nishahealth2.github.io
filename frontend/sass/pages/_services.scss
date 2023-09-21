@@ -1,0 +1,40 @@
+.get{
+    background-color: $color-sub-icon;
+    margin: 0 2rem;
+    border-radius: 2rem;
+    color: $color-white;
+    padding: 3rem;
+    
+    &-hd{
+        max-width: 114rem;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+        h3,
+        h4 {
+            margin-bottom: 1rem;;
+        }
+        
+
+    }
+    &-con{
+        background-color:$color-white;
+        border-radius: 2rem;
+        color:$color-txt-heading;
+        padding: 2rem 3rem;
+
+        p{
+            font-size: 1.6rem;
+        }
+    }
+   
+}
+
+.d-fl{
+    display: flex;;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+
+
+}
+
