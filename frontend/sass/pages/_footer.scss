@@ -1,0 +1,95 @@
+.ft{
+    display: flex;
+    background-color: $color-sub-icon;
+    color:$color-white;
+    padding: 5rem 3rem;
+    gap: 6rem;
+    align-content: center;
+    align-items: center;
+
+    a{
+        color: $color-white
+    }
+
+    &_main{
+        display: flex;
+        flex-basis: 50%;
+        justify-content:space-between;
+        margin-bottom: 3rem; 
+        padding-bottom: 3rem;
+    }
+
+    &_main1{
+        h4{
+            font-family: Chrous;
+            
+        }
+        &-lg{
+            margin-bottom: 3rem;
+        }
+
+        p{
+            padding-left: 1rem;
+            font-size: 1.8rem;
+        }
+
+        &_log{
+            a{
+                display: flex;
+                font-family: Poppins !important;
+                font-size: $default-font-size;
+                padding: 0 1rem !important;
+                text-decoration: none;
+                align-items: center;
+        
+                span{
+                     font-size:3rem; 
+                     height: 4rem;
+                    font-family: Poppins;
+                }
+        
+                img{
+                    
+                    position: relative;
+                    top:-0.2rem;
+                    padding-right: 0.1rem;
+                    width: 5rem;
+                }
+            }
+        }
+
+        &-md{
+            display: flex;
+            margin-top: 2rem;
+            gap: 3rem;
+            padding-left:2rem;
+
+        }
+
+    }
+
+    &_main-l2{
+        li{
+            list-style: none;
+            
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                padding:1rem;
+
+            }
+
+            a:hover{
+                background-color: $color-icon;
+                border-radius:1rem;
+               
+            }
+        }
+
+        h5{
+            padding: 1rem;
+            font-size: 2.4rem;
+        }
+    }
+
+}
