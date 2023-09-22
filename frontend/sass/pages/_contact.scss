@@ -1,39 +1,35 @@
-.cont{
-    
-    
-    align-items: center;
-    justify-content: center;
+.contact{
+     background-color: $color-white;
+     border-radius: 2rem;
+     margin: 4rem;
+     color: $color-txt-heading;
+     padding: 3rem;
 
-    @include respond(tab-port) {// width <900px
-        text-align: center;
-        
-        
-    }
-
+   
 
 
     form{
-        display:flex;
+         display:flex;
         max-width:100rem;
         flex-direction: column;
-        flex: 0 0 50%;
         padding:15px;
         border-radius:5px;
-        margin-bottom: 50px;
-        border:1px solid $color-nav-ln;
+        color: $color-inpt-txt;
+        
 
 
        
-        
 
         input{
-            // height: 2rem;
+            
             border-radius: 1rem;
             padding: 1rem 0 1rem 1rem;
-            background-color: $color-form-back;
-            font-size: $default-font-size;
+            background-color: $color-input-back;
             border-radius:5px;
             border:1px solid $color-nav-ln;
+            color: $color-inpt-txt;
+
+            
         
         
             &:focus{
@@ -60,34 +56,34 @@
 
         textarea{
             border-radius: 1rem;
-            background-color: $color-form-back;
+            background-color: $color-input-back;
             padding-left: 1rem;
             font-size: 1.8rem;
-            margin-bottom: 2rem;
+            // margin-bottom: 2rem;
             border:1px solid $color-nav-ln;
         }
 
-        button{
-            background-color: $color-white;
-            border-radius: 1rem !important;
-            a{
-                text-decoration: none;
-                color: $color-icon;
-            }
+        // button{
+        //     background-color: $color-white;
+        //     border-radius: 1rem !important;
+        //     a{
+        //         text-decoration: none;
+        //         color: $color-icon;
+        //     }
 
             
-        } 
+        // } 
         
         
-        button:focus,
-        button:visited,
-        button:hover{
-            background-color: $color-icon;
-            a{
-                color:$color-white;
+        // button:focus,
+        // button:visited,
+        // button:hover{
+        //     background-color: $color-icon;
+        //     a{
+        //         color:$color-white;
                 
-            }
-        }
+        //     }
+        // }
     
     }
 
@@ -98,26 +94,41 @@
     align-items: center;
     justify-content: center;
     margin: 0 6rem;
+    flex-basis: 45%;
 
-    h2{
-        font-size: 3.5rem;
-        font-weight: 600;
+    &-s{
+        margin-top: 5rem;
 
-        @include respond(tab-port) {// width <900px
-            margin-top: 4rem;
+        span{
+            a{
+                border-bottom:2px solid;
+                display: inline-block;
+                padding: 0rem;
+                margin-top: 1rem;
+                text-decoration: none;
+                color: $color-txt-heading;
+                cursor: pointer;
+
+
+               
+                
+            }
             
+                
+            
+
             
         }
-    }
+        span:visited,
+        span:focus,
+        span:hover{
+                    a{
+                        color: $color-link;
 
-    h4{
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-    p{
-        margin-bottom: 2rem;
-        font-size: 2rem;
+                    }
+                }
+
         
-
     }
+
 }
