@@ -1,0 +1,123 @@
+.cont{
+    
+    
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-port) {// width <900px
+        text-align: center;
+        
+        
+    }
+
+
+
+    form{
+        display:flex;
+        max-width:100rem;
+        flex-direction: column;
+        flex: 0 0 50%;
+        padding:15px;
+        border-radius:5px;
+        margin-bottom: 50px;
+        border:1px solid $color-nav-ln;
+
+
+       
+        
+
+        input{
+            // height: 2rem;
+            border-radius: 1rem;
+            padding: 1rem 0 1rem 1rem;
+            background-color: $color-form-back;
+            font-size: $default-font-size;
+            border-radius:5px;
+            border:1px solid $color-nav-ln;
+        
+        
+            &:focus{
+                outline:none;
+                box-shadow: 0 1rem 2rem rgba ($color-black, .1);
+                border-bottom: 3px solid $color-green;
+            }
+         
+            &:focus:invalid {
+                border-bottom: 3px solid $color-icon
+            }
+
+            &::-webkit-input-placeholder {
+                color: $color-nav-ln;
+            }
+        }
+
+        label{
+            font-size: $default-font-size;
+            font-weight: 400;
+            padding-left: 1rem;
+
+        }
+
+        textarea{
+            border-radius: 1rem;
+            background-color: $color-form-back;
+            padding-left: 1rem;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            border:1px solid $color-nav-ln;
+        }
+
+        button{
+            background-color: $color-white;
+            border-radius: 1rem !important;
+            a{
+                text-decoration: none;
+                color: $color-icon;
+            }
+
+            
+        } 
+        
+        
+        button:focus,
+        button:visited,
+        button:hover{
+            background-color: $color-icon;
+            a{
+                color:$color-white;
+                
+            }
+        }
+    
+    }
+
+}
+
+.cont_txt{
+    margin:4rem 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6rem;
+
+    h2{
+        font-size: 3.5rem;
+        font-weight: 600;
+
+        @include respond(tab-port) {// width <900px
+            margin-top: 4rem;
+            
+            
+        }
+    }
+
+    h4{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        
+
+    }
+}

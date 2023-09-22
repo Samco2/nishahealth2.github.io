@@ -175,6 +175,7 @@ body:after {
 
 .bgk {
   background-color: #F2F6FF;
+  padding: 2rem;
 }
 
 .icon2 {
@@ -316,6 +317,100 @@ body:after {
   margin-bottom: 1rem;
 }
 
+.cont {
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 56.25em) {
+  .cont {
+    text-align: center;
+  }
+}
+.cont form {
+  display: flex;
+  max-width: 100rem;
+  flex-direction: column;
+  flex: 0 0 50%;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  border: 1px solid #ECECEC;
+}
+.cont form input {
+  border-radius: 1rem;
+  padding: 1rem 0 1rem 1rem;
+  background-color: #EAEEF7;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: 1px solid #ECECEC;
+}
+.cont form input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba #000, 0.1;
+  border-bottom: 3px solid green;
+}
+.cont form input:focus:invalid {
+  border-bottom: 3px solid #FF007F;
+}
+.cont form input::-webkit-input-placeholder {
+  color: #ECECEC;
+}
+.cont form label {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+.cont form textarea {
+  border-radius: 1rem;
+  background-color: #EAEEF7;
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ECECEC;
+}
+.cont form button {
+  background-color: #fff;
+  border-radius: 1rem !important;
+}
+.cont form button a {
+  text-decoration: none;
+  color: #FF007F;
+}
+.cont form button:focus,
+.cont form button:visited,
+.cont form button:hover {
+  background-color: #FF007F;
+}
+.cont form button:focus a,
+.cont form button:visited a,
+.cont form button:hover a {
+  color: #fff;
+}
+
+.cont_txt {
+  margin: 4rem 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6rem;
+}
+.cont_txt h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+@media (max-width: 56.25em) {
+  .cont_txt h2 {
+    margin-top: 4rem;
+  }
+}
+.cont_txt h4 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.cont_txt p {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
 .guid h3,
 .guid h2,
 .guid p {
@@ -425,7 +520,7 @@ body:after {
 /* DROP DOWN MENU END */
 .get {
   background-color: #6B93F6;
-  margin: 0 2rem;
+  margin: 2rem;
   border-radius: 2rem;
   color: #fff;
   padding: 3rem;
